@@ -64,10 +64,10 @@ public class PostCardUI : MonoBehaviour
         UpdateLikeVisual();
 
         // Add listeners for buttons
-        likeButton.onClick.RemoveAllListeners();
+        likeButton.onClick.RemoveListener(ToggleLike);
         likeButton.onClick.AddListener(ToggleLike);
 
-        commentButton.onClick.RemoveAllListeners();
+        commentButton.onClick.RemoveListener(OpenComments);
         commentButton.onClick.AddListener(OpenComments);
 
         // Basic Animation setup

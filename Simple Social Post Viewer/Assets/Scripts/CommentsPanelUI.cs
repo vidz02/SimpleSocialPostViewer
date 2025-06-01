@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 public class CommentsPanelUI : MonoBehaviour
 {
@@ -11,8 +12,14 @@ public class CommentsPanelUI : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        gameObject.SetActive(false);       
+        closeButton.onClick.AddListener(() => StartCoroutine(DeactivateWithDelay()));
+    }
+    IEnumerator DeactivateWithDelay()
+    {
+        // Add a simple animation effect before closing
+        yield return new WaitForSeconds(closeButton.GetComponent<ButtonClickEffect>().animationDuration + 0.05f);
         gameObject.SetActive(false);
-        closeButton.onClick.AddListener(() => gameObject.SetActive(false));
     }
 
     // Call this to open the popup with dummy comments
