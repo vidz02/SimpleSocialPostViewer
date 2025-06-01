@@ -1303,6 +1303,7 @@ GameObject:
   - component: {fileID: 2091184162}
   - component: {fileID: 2091184161}
   - component: {fileID: 2091184163}
+  - component: {fileID: 2091184164}
   m_Layer: 5
   m_Name: CommentsPanel
   m_TagString: Untagged
@@ -1384,6 +1385,18 @@ MonoBehaviour:
   commentsContent: {fileID: 479201730}
   commentPrefab: {fileID: 4663578497757815158, guid: 839f7355405314540a2c3c6fe7a69317, type: 3}
   closeButton: {fileID: 943074854}
+--- !u!225 &2091184164
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091184159}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
