@@ -1,8 +1,8 @@
 # Simple Social Post Viewer
-A Unity project that demonstrates a basic social media-style post UI, created as part of the Unity Intern Assignment.
+A Unity project that demonstrates a basic social media-style post UI, created as part of the Unity Assignment.
 
 ## 📋 Project Overview
-This project simulates a single social media post using Unity’s UI system. It displays a user name, profile picture, post content, and a like button that toggles between liked and unliked states. The post uses dummy data, and the like count updates interactively. The project is designed to showcase skills in Unity UI, basic C# scripting, and handling user interactions.
+This project simulates social media post using Unity’s UI system. It displays a user name, profile picture, post content, and a like button that toggles between liked and unliked states. The post uses dummy data, and the like count updates interactively. The project is designed to showcase skills in Unity UI, basic C# scripting, and handling user interactions.
 
 ## 🎯 Features
 * Social Media Post UI:
@@ -38,7 +38,12 @@ Implemented simple logic to toggle UI states (like button) and update related da
 Practiced structuring a Unity project for clarity and maintainability.
 
 ## 🖼️ Screenshots
-{Screenshots}
+![Main UI](Demo_Media/Screenshot_1.png)
+![Comments Popup](Demo_Media/Screenshot_2.png)
+
+## Demo Video
+![Watch the demo](Demo_Media/Demo_Video.gif)
+
 
 ## How to Run
 1. Clone or download this repository.
@@ -54,7 +59,6 @@ This project fulfills the requirements outlined in the Unity Assignment:
 
 ## 📝 Notes
 * The project is intentionally simple and focused on core requirements.
-
 * Optional bonus features (multiple posts, comments, persistent likes, animations) can be added as extensions.
 
 ##
