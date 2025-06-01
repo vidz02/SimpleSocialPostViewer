@@ -17,7 +17,7 @@ public class PostCardUI : MonoBehaviour
     private Post postData;
     private bool isLiked;
 
-    public CanvasGroup canvasGroup;
+    private CanvasGroup canvasGroup;
 
     public void Setup(Post post, int index)
     {

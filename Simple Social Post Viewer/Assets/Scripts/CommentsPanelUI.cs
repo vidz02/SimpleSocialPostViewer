@@ -9,11 +9,13 @@ public class CommentsPanelUI : MonoBehaviour
     public Transform commentsContent;
     public GameObject commentPrefab;
     public Button closeButton;
+    private CanvasGroup canvasGroup;
     void Awake()
     {
         Instance = this;
         gameObject.SetActive(false);       
         closeButton.onClick.AddListener(() => StartCoroutine(DeactivateWithDelay()));
+        canvasGroup = GetComponent<CanvasGroup>();
     }
     IEnumerator DeactivateWithDelay()
     {
@@ -37,5 +39,21 @@ public class CommentsPanelUI : MonoBehaviour
             GameObject commentGO = Instantiate(commentPrefab, commentsContent);
             commentGO.GetComponent<TMP_Text>().text = $"{userName} comment {i}";
         }
+        
+        // Basic Animation setup
+        StartCoroutine(FadeIn());
+    }
+
+    IEnumerator FadeIn()
+    {
+        canvasGroup.alpha = 0;
+        float t = 0;
+        while (t < 1)
+        {
+            t += Time.deltaTime * 4f;
+            canvasGroup.alpha = Mathf.Lerp(0, 1, t);
+            yield return null;
+        }
+        canvasGroup.alpha = 1;
     }
 }
