@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "username": "John Doe",
+            "profilePic": "ProfilePic1",
+            "content": "This is my first post!",
+            "likes": 10
+        },
+        {
+            "username": "Rock Lee",
+            "profilePic": "ProfilePic2",
+            "content": "First impression is the Last impression!",
+            "likes": 100
+        }
+    ]
+}
