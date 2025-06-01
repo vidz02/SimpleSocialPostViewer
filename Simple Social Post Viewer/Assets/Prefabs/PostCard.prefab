@@ -463,8 +463,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -611,7 +611,8 @@ GameObject:
   - component: {fileID: 6009870733304710955}
   - component: {fileID: 4347599475631087806}
   - component: {fileID: 3127787999212807492}
-  - component: {fileID: 233344454663286466}
+  - component: {fileID: 5577574466097246350}
+  - component: {fileID: 519270430970893166}
   m_Layer: 5
   m_Name: PostCard
   m_TagString: Untagged
@@ -720,7 +721,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &233344454663286466
+--- !u!114 &5577574466097246350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -729,13 +730,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 2886114206190001317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf1bc50e0152d4b9fb9717be69e342, type: 3}
+  m_Script: {fileID: 11500000, guid: c7f4a0a128e473b45ade781658072446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   profilePicImage: {fileID: 4654775346307542195}
   userNameText: {fileID: 7473670896642491344}
   contentText: {fileID: 7417386638884839266}
   likeCountText: {fileID: 3725928702780398828}
+  likeButton: {fileID: 353665033070900815}
+  likeIcon: {fileID: 3381877914767729518}
+  commentButton: {fileID: 3239996677377503576}
+  canvasGroup: {fileID: 0}
+--- !u!225 &519270430970893166
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886114206190001317}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &4534109081083487639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1050,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.040775973, g: 0.5866647, b: 0.93962264, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
     m_PressedColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
